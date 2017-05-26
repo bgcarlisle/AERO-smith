@@ -1,7 +1,8 @@
 library(readr)
 
 # Read trials from CSV
-trials <- read_delim("~/Software/AERO-smith/trials.csv", ",", escape_double = FALSE, trim_ws = TRUE)
+setwd("~/Software/AERO-smith/")
+trials <- read_delim("trials.csv", ",", escape_double = FALSE, trim_ws = TRUE)
 
 # Construct data frame for unique rows
 rows <- data.frame(
@@ -44,8 +45,14 @@ aero <- ggplot (
   scale_y_discrete(limits=trials$y_coordinate, labels=trials$row) +
   theme(axis.text.y = element_text(hjust=0)) +
   theme(plot.margin = unit(c(1,1,1,1), "cm")) +
-  # theme(legend.position = "none") +
-  scale_shape_manual(values = c(15, 16, 17))
+  theme(legend.position = "none") +
+  scale_shape_manual(values = c(15, 16, 17)) # Look up codes for other shapes here: http://www.cookbook-r.com/Graphs/Shapes_and_line_types/
 
 # Plot graph
+pdf(
+  "AERO-graph.pdf",
+  height=2, # Adjust height and width as necessary
+  width=5
+)
 aero
+dev.off()
