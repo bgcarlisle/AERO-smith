@@ -1,0 +1,10 @@
+date,colour,shape,scale,row
+2009-09-01,Positive,Phase 2,10,RCC
+2010-05-01,Positive,Phase 3,150,RCC
+2013-01-01,Negative,Phase 2,50,Melanoma
+2014-02-01,Inconclusive,Phase 3,175,Melanoma
+2011-06-01,Positive,Phase 2,25,Breast cancer
+2013-09-01,Negative,Phase 2,35,Breast cancer
+2013-09-01,Positive,Phase 3,200,GIST
+2010-02-01,Positive,Phase 2,30,GIST
+2009-05-01,Positive,Phase 1,15,Mixed malignancy
