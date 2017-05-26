@@ -4,7 +4,7 @@
 
 ## Generate AERO figures in R
 
-This is an R script for generating simplified AERO figures from a CSV formatted file.[^aero]
+This is an R script for generating simplified AERO figures<sup>1</sup> from a CSV formatted file.
 
 ## Requirements
 
@@ -22,4 +22,4 @@ One of the columns contains dates, and Excel will re-format your dates and break
 
 ## References
 
-[^aero]: Hey SP, Heilig CM, Weijer C. Accumulating Evidence and Research Organization (AERO) model: a new tool for representing, analyzing, and planning a translational research program. Trials. 2013 May 30;14(1):159.
+1. Hey SP, Heilig CM, Weijer C. Accumulating Evidence and Research Organization (AERO) model: a new tool for representing, analyzing, and planning a translational research program. Trials. 2013 May 30;14(1):159.
